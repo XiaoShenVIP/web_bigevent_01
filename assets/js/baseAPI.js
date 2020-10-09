@@ -17,7 +17,7 @@ $.ajaxPrefilter(function (params) {
     }
     // 3.身份认证判断
     params.complete = function (res) {
-        console.log(res);
+        // console.log(res);
         // 权限认证
         if (res.responseJSON.status === 1 && res.responseJSON.message === "身份认证失败！") {
             // 1.删除本地 token
